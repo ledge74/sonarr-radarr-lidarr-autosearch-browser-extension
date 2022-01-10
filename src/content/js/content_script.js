@@ -672,6 +672,8 @@ var base64Icons = [
                 containerSelector: '.titlebar-page .titlebar-title',
                 locator: 'prepend',
                 imgStyles: 'width: 35px; margin: -8px 10px 0 0;'
+            }
+        },
         // senscritique sonarr
         {
             id: 'senscritique',
