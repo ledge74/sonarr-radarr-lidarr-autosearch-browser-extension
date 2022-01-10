@@ -104,7 +104,7 @@ module.exports = function (grunt) {
                 options: {
                     stdout: true
                 },
-                command: 'create-package_Grunt.sh'
+                command: '/home/fsanchez/workspace/sonarr-radarr-lidarr-autosearch-browser-extension/create_packages_Grunt.sh'
             }
         }
     });
@@ -113,10 +113,10 @@ module.exports = function (grunt) {
     grunt.registerTask('debug', ['jshint', 'clean:debug', 'copy']);
     
     // release group task
-    grunt.registerTask('release', ['jshint', 'clean:release', 'sass', 'copy:release', 'shell:ps']);
+    // grunt.registerTask('release', ['jshint', 'clean:release', 'sass', 'copy:release', 'shell:ps']);
     
     // Runs the .sh package create. Possibly.
-    // grunt.registerTask('release', ['jshint', 'clean:release', 'sass', 'copy:release', 'shell:sh']);
+    grunt.registerTask('release', ['jshint', 'clean:release', 'sass', 'copy:release', 'shell:sh']);
     
     // review group task
     grunt.registerTask('review', ['clean:release', 'copy:release']);

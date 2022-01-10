@@ -206,6 +206,12 @@ let sessionId,
                 image: 'allocine.png',
                 enabled: true
             },
+            {
+                id: 'senscritique',
+                name: 'SensCritique',
+                image: 'senscritique.png',
+                enabled: true
+            }
             // {
             //     id: 'nextepisode',
             //     name: 'Next Episode',
